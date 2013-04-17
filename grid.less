@@ -1,0 +1,24 @@
+@pad: 1%;
+@wrap: 100%;
+
+.grids (@num-of-grids) {
+  width: (@wrap - (@pad * (@num-of-grids - 1) ) ) / @num-of-grids; 
+}
+
+.grid {
+  display: table;
+  max-width: @wrap; 
+  margin: @pad 0;
+}
+
+[class*='col-'] {
+  float: left;
+  margin: @pad @pad 0 0; 
+}
+
+.last { margin-right: 0; }
+
+.col-2 { .grids(2); }
+.col-4 { .grids(4); }
+.col-8 { .grids(8); }
+.col-3 { .grids(3); }
