@@ -1,11 +1,14 @@
 .grid {
   display: table;
-  max-width: 100%;
-  margin: 1% 0;
+  width: 100%;
 }
 [class*='col-'] {
   float: left;
-  margin: 1% 1% 0 0;
+  margin: 0 1% 1% 0;
+}
+[class*='col-'] img {
+  max-width: 100%;
+  height: auto;
 }
 .last {
   margin-right: 0;
@@ -13,12 +16,21 @@
 .col-2 {
   width: 49.5%;
 }
+.col-3 {
+  width: 32.666666666666664%;
+}
 .col-4 {
   width: 24.25%;
+}
+.col-5 {
+  width: 19.2%;
+}
+.col-6 {
+  width: 15.833333333333334%;
 }
 .col-8 {
   width: 11.625%;
 }
-.col-3 {
-  width: 32.666666666666664%;
+.col-12 {
+  width: 7.416666666666667%;
 }
