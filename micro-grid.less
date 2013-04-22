@@ -1,8 +1,11 @@
 @gutter: 1%; 
 @width: 100%; 
 
+
 .grids (@num-of-cols) {
-  width: (@width - (@gutter * (@num-of-cols - 1) ) ) / @num-of-cols; 
+  @grid-size: (@width/12);
+  @cols: ( @width / (@grid-size * @num-of-cols) );
+  width: (@width - (@gutter * (@cols - 1) ) ) / @cols; 
 }
 
 .grid { 
@@ -15,6 +18,4 @@
   margin: 0 @gutter @gutter 0; 
 }
 
-.last { margin-right: 0; }
-
-
+.last { margin-right: 0; } 
