@@ -16,7 +16,7 @@ more info about the "why" of this tool on my [blog](http://juanolvera.com)
 
 ## Installation
 
-Just copy the <code>micro-grid.less</code> to your project folder.
+Download or clone the repo and copy the <code>micro-grid.less</code> to your project folder.
 
 ## How to use
 
@@ -25,7 +25,7 @@ First import micro-grid.less
 @import 'micro-grid';
 ```
 
-Then set your @gutter size on %, or use the default 1%
+Then set your @gutter size on %, or leave it and default 1% will be used.
 ```
 @gutter: 2%; 
 ```
@@ -33,10 +33,11 @@ Then set your @gutter size on %, or use the default 1%
 Now, set the columns that you want to use, for example, 3 columns:
 
 ```
-col-1-3 { .cols(4); } /* column one of three */
+/* column one of three */
+col-1-3 { .cols(4); } /* 12/3 = 4 */
 ```
 
-Why **4**? Because we are targeting 12 columns if you want 3, you need to divide 12/ num of columns you want, so 12/3 = 4.
+Why **4**? Because we are targeting 12 columns if you want 3, you need to divide ( grid size / num of columns) so 12/3 = 4.
 
 And finally the markup:
 
@@ -56,6 +57,7 @@ And finally the markup:
 		</div> <! -- we use the last class to remove margin-right -->
 	</div> <!-- end of grid -->
 </div> <!-- end of wrap -->
+```
 
 Our complete style.less file looks like this:
 
