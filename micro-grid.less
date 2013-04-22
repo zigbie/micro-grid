@@ -1,10 +1,9 @@
 @gutter: 1%; 
 @width: 100%; 
 
-
-.grids (@num-of-cols) {
-  @grid-size: (@width/12);
-  @cols: ( @width / (@grid-size * @num-of-cols) );
+.cols (@num-of-cols) {
+  @col-size: (@width/12);
+  @cols: ( @width / (@col-size * @num-of-cols) );
   width: (@width - (@gutter * (@cols - 1) ) ) / @cols; 
 }
 
@@ -18,4 +17,4 @@
   margin: 0 @gutter @gutter 0; 
 }
 
-.last { margin-right: 0; } 
+.last { margin-right: 0; }
