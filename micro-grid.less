@@ -1,8 +1,9 @@
 @gutter: 1%; 
 @width: 100%; 
+@grid-size: 12; // 12 columns
 
 .cols (@num-of-cols) {
-  @col-size: (@width/12);
+  @col-size: (@width/@grid-size);
   @cols: ( @width / (@col-size * @num-of-cols) );
   width: (@width - (@gutter * (@cols - 1) ) ) / @cols; 
 }
