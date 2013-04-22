@@ -1,0 +1,20 @@
+@gutter: 1%; 
+@width: 100%; 
+
+.grids (@num-of-cols) {
+  width: (@width - (@gutter * (@num-of-cols - 1) ) ) / @num-of-cols; 
+}
+
+.grid { 
+  display: table;
+  width: 100%; 
+}
+
+[class*='col-'] {
+  float: left;
+  margin: 0 @gutter @gutter 0; 
+}
+
+.last { margin-right: 0; }
+
+

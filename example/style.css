@@ -1,0 +1,74 @@
+/* micro-grid by Juan Olvera http://juanolvera.com */
+.grid {
+  display: table;
+  width: 100%;
+}
+[class*='col-'] {
+  float: left;
+  margin: 0 1% 1% 0;
+}
+[class*='col-'] img {
+  max-width: 100%;
+  height: auto;
+}
+.last {
+  margin-right: 0;
+}
+/* examples */
+.col-1-2 {
+  width: 49.5%;
+}
+.col-1-3 {
+  width: 32.666666666666664%;
+}
+.col-1-4 {
+  width: 24.25%;
+}
+.col-1-5 {
+  width: 19.2%;
+}
+.col-1-6 {
+  width: 15.833333333333334%;
+}
+.col-1-8 {
+  width: 11.625%;
+}
+.col-1-12 {
+  width: 7.416666666666667%;
+}
+.gcol-1 {
+  width: 7.416666666666667%;
+}
+.gcol-2 {
+  width: 15.833333333333334%;
+}
+.gcol-3 {
+  width: 24.25%;
+}
+.gcol-4 {
+  width: 32.666666666666664%;
+}
+.gcol-5 {
+  width: 41.08316499997195%;
+}
+.gcol-6 {
+  width: 49.5%;
+}
+.gcol-7 {
+  width: 57.916430999862534%;
+}
+.gcol-8 {
+  width: 66.33333333333333%;
+}
+.gcol-9 {
+  width: 74.74969699988638%;
+}
+.gcol-10 {
+  width: 83.16666666666667%;
+}
+.gcol-11 {
+  width: 91.58296300024689%;
+}
+.gcol-12 {
+  width: 100%;
+}
