@@ -1,10 +1,10 @@
-# micro-grid.less v0.1
+# micro-grid.less v1.0
 
 A 12 column fluid grid generator built on less.
 
 ## About
 
-I built this tool after [Andy Taylor](#) shutted down [cssgrid](http://cssgrid.net), but I wanted to avoid some stuff like:
+I built this tool after [Andy Taylor](http://andytaylor.me/) shutted down [cssgrid](http://cssgrid.net), but I wanted to avoid some stuff like:
 
 - Fixed gutter size
 - Unused columns
@@ -25,7 +25,7 @@ First import micro-grid.less
 @import 'micro-grid';
 ```
 
-Then set your @gutter size on %, or leave it and default 1% will be used.
+Then set your @gutter size on % or leave it and default 1% will be used.
 ```
 @gutter: 2%; 
 ```
@@ -44,7 +44,7 @@ And finally the markup:
 ```
 <div class="wrap"> <!-- your container -->
 	<div class="grid"> <!-- necessary class to wrap columns -->
-		<div class="col-1-3"> <-- class made with .cols(4); function -->
+		<div class="col-1-3"> <-- class that include our .cols(4); result -->
 			<p> First column </p>
 		</div>
 
