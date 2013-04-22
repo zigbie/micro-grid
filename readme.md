@@ -10,7 +10,7 @@ I built this tool after [Andy Taylor](http://andytaylor.me/) shutted down [cssgr
 - Unused columns
 - Unnecessary code
 
-So I ended building a less function to generate only the columns I need, on a simple and 0.334 kb file.
+So I ended building a less function to generate only the columns I need, on a simple and 0.367 kb file.
 
 more info about the "why" of this tool on my [blog](http://juanolvera.com)
 
