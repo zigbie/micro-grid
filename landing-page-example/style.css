@@ -4,7 +4,11 @@
 }
 [class*='col-'] {
   float: left;
-  margin: 0 3% 3% 0;
+  margin: 0 3% 0 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 .last {
   margin-right: 0;
@@ -134,7 +138,7 @@ a:focus {
 .l-header {
   display: table;
   width: 100%;
-  padding: 1em 0 0 0;
+  padding: 1em 0;
   color: #333;
   background: #f9f2e7;
 }
@@ -150,7 +154,7 @@ a:focus {
 .l-middle-paragraph {
   padding: 1em 0;
   color: #999;
-  background: #ddd;
+  background: #eee;
   font-size: 1.125em;
 }
 .l-middle-paragraph h3 {
@@ -251,6 +255,7 @@ i.icon {
 }
 @media handheld, only screen and (max-width: 767px) {
   .l-logo {
+    margin-bottom: 1em;
     text-align: center;
   }
   .l-nav {

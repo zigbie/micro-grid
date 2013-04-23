@@ -107,7 +107,7 @@ a:focus { outline: none; }
 .l-header {
   display: table;
   width: 100%;
-  padding: 1em 0 0 0;
+  padding: 1em 0;
   color: #333;
   background: @white; }
 
@@ -123,7 +123,7 @@ a:focus { outline: none; }
 .l-middle-paragraph {
   padding: 1em 0; 
   color: #999;
-  background: #ddd;
+  background: #eee;
   font-size: 1.125em;
   & h3 { 
   font-size: 1.618em;
@@ -180,7 +180,9 @@ i.icon {
 
 @media handheld, only screen and (max-width: 767px) {
 
-  .l-logo { .text-center; }
+  .l-logo { 
+    margin-bottom: 1em;
+    .text-center; }
 
   .l-nav { float: none; 
     & ul { 
