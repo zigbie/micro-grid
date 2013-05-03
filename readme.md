@@ -21,18 +21,18 @@ Download or clone the repo and copy the <code>micro-grid.less</code> to your pro
 ## How to use
 
 First import micro-grid.less
-```
+```css
 @import 'micro-grid';
 ```
 
 Then set your @gutter size on % or leave it and default 1% will be used.
-```
+```css 
 @gutter: 2%; 
 ```
 
 Now, set the columns that you want to use, for example, 3 columns:
 
-```
+```css 
 /* column one of three */
 col-1-3 { .cols(4); } /* 12/3 = 4 */
 ```
@@ -41,7 +41,7 @@ Why **4**? Because we are targeting 12 columns if you want 3, you need to divide
 
 And finally the markup:
 
-```
+```html
 <div class="wrap"> <!-- your container -->
 	<div class="grid"> <!-- necessary class to wrap columns -->
 		<div class="col-1-3"> <-- class that include our .cols(4); result -->
@@ -61,7 +61,7 @@ And finally the markup:
 
 Our complete style.less file looks like this:
 
-```
+```css 
 @import 'micro-grid';
 @gutter: 2%;
 
