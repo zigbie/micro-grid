@@ -1,21 +1,21 @@
 @gutter: 1%; 
 @width: 100%; 
-@grid-size: 12; // 12 columns
+@grid-size: 12; 
 
 .cols (@num-of-cols) {
-  @col-size: (@width/@grid-size);
-  @cols: ( @width / (@col-size * @num-of-cols) );
-  width: (@width - (@gutter * (@cols - 1) ) ) / @cols; 
+    @col-size: (@width/@grid-size); 
+    @cols: ( @width / (@col-size * @num-of-cols) );
+    width: (@width - (@gutter * (@cols - 1) ) ) / @cols; 
 }
 
-.grid { 
-  display: table;
-  width: 100%; 
+.row { 
+    display: table;
+    width: 100%; 
 }
 
 [class*='col-'] {
-  float: left;
-  margin: 0 @gutter @gutter 0; 
+    float: left;
+    margin: 0 @gutter @gutter 0; 
 }
 
 .last { margin-right: 0; }

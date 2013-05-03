@@ -1,0 +1,44 @@
+/** 
+  * INSTRUCTIONS
+  *
+  * 1. Import micro-grid
+  * 2. set gutter size or don't, default is 1%
+  * 3. create the columns you need
+ */
+
+/* Grid Setup */
+
+@import 'micro-grid';
+// gutter: 2%; 
+// .col-1-2 { .cols(6); } /* one of two cols, 12/2 */
+
+
+/* Desktop layout */
+
+body {
+
+}
+
+
+/* Mobile layout */
+
+@media handheld, only screen and (max-width: 767px) {
+
+    .grid { 
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0; 
+    }
+
+    [class*='col-'] { 
+        width: auto;
+        float: none; 
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0; 
+    }
+
+}
